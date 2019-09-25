@@ -1,7 +1,20 @@
 const path = require('path')
 const webpack = require('webpack')
 
-module.exports = {
+module.exports = [function() {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve({
+        entry: './src/app.js',
+        mode: 'none',
+        output: {
+          filename: '[name]3.js',
+          path: path.resolve(__dirname, 'dist') 
+        }
+      })
+    })
+  })
+},{
   context: path.resolve(__dirname, 'src'),
   entry: () => {
     return new Promise(resolve => {
@@ -75,4 +88,13 @@ module.exports = {
         $: 'jquery'
     })
   ]
-}
+}, function() {
+  return {
+    entry: './src/app.js',
+    mode: 'none',
+    output: {
+      filename: '[name]2.js',
+      path: path.resolve(__dirname, 'dist') 
+    }
+  }
+}]
