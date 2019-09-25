@@ -1,4 +1,3 @@
-
 * Entry
     * context
 
@@ -475,3 +474,29 @@
             mainFields: ['loader', 'main']
         }
         ```
+
+* 多种配置类型
+
+  ```js
+  module.exports = function () {
+    return {
+
+    }
+  }
+
+  module.exports = function () {
+    return new Promise(resolve => {
+      resolve({})
+    })
+  }
+
+  module.exports = [function () {
+    return new Promise(resolve => {
+      resolve({})
+    })
+  }, function () {
+    return {
+
+    }
+  }]
+  ```
