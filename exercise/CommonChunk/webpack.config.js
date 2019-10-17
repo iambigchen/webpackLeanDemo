@@ -1,6 +1,5 @@
 const path = require('path')
 const webpack = require('webpack')
-const packagejson = require("./package.json")
 module.exports = {
   entry: {
     app: './src/entryA.js',
