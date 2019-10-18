@@ -1,0 +1,17 @@
+*{
+  color: red
+}
+:local(.box) {
+  color: green;
+}
+div{
+  width: 100px;
+  height: 100px;
+}
+
+.block {
+  display: block; }
+
+.hidden {
+  display: none; }
+

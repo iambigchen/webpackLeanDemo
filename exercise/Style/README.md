@@ -1,7 +1,17 @@
 #### style-loader
 配置有：（1.0以上的版本）
 1. injectType 用那种形式把css注入到页面中
- 
+
+除了linkTag外，其他的配置选项都需要配合css-loader使用
+```js
+rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      }
+]
+```
+
 1.1 styleTag 用一个style标签注入到页面中
 
 1.2 singletonStyleTag 如果引入了多个css文件，都放到一个style标签中
