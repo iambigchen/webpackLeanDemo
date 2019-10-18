@@ -110,3 +110,6 @@ module: {
     })
   ]
 ```
+
+##### extract-text-webpack-plugin
+该插件也能实现上述的提取css的功能
