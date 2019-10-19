@@ -1,1 +1,1 @@
-import './css/3.jpg'
+import './css/base.css'
