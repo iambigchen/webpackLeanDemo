@@ -427,7 +427,7 @@
 
         监听模式 
     
-    * watchOption
+    * watchOptions
 
         * ignored
 
